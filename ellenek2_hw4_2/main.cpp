@@ -6,9 +6,29 @@
 //
 
 #include <iostream>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int reverse(int n){
+    int digit;
+    do{
+        digit = n%10;
+        n = n/10;
+        if(digit == 0){
+            cout <<"";
+        }
+        else{
+            cout << digit;
+        }
+    }
+    while(n>0);
+    cout << endl;
+    return 0;
+}
+
+int main() {
+    int num;
+    cout << "Enter an integer: ";
+    cin >> num;
+    reverse(num);
     return 0;
 }
